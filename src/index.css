@@ -1,1 +1,46 @@
 @import "tailwindcss";
+
+/* Instagram-like heart animation */
+.heart-active {
+  animation: instagramLike 0.45s cubic-bezier(0.3, 1.2, 0.4, 1) forwards;
+  transform-origin: center;
+}
+
+.heart-inactive {
+  animation: instagramUnlike 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes instagramLike {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes instagramUnlike {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
