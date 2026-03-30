@@ -8,9 +8,9 @@ export default function Card01() {
   return (
     <div className="w-[280px] h-fit flex flex-col bg-[#FFFFFF] shadow-[0px_0px_14px_-1px_rgba(0,_0,_0,_0.15)] rounded-xl overflow-hidden">
       <div className="w-full h-[150px]">
-        <img src={Image} alt="" className="w-full h-full" />
+        <img src={Image} alt="" className="w-full h-full object-cover" />
       </div>
-      <div className="w-full h-full flex flex-col px-[12px] pt-[8px] pb-6">
+      <div className="w-full h-full flex flex-col p-3">
         {/* first heading */}
         <div className="flex justify-between items-center capitalize">
           <h1 className="text-[#252525] text-xl font-medium">
@@ -21,7 +21,7 @@ export default function Card01() {
 
         {/* 2nd heading */}
         <div className="mt-2">
-          <p className="text-[#555555] text-sm">
+          <p className="text-[13.5px] font-normal leading-[1.3] text-[#474242]">
             Experience a cliffside loft with iconic white walls, blue domes and
             magical sunset views.
           </p>
@@ -44,7 +44,7 @@ export default function Card01() {
           })}
         </div>
         {/* footer */}
-        <div className="grid grid-cols-[.15fr_1fr] place-content-center mt-2 gap-2 relative z-10">
+        <div className="grid grid-cols-[.15fr_1fr] place-content-center mt-6 gap-2 relative z-10">
           <button
             onClick={() => setActive(!active)}
             className="w-8 h-8 flex items-center justify-center cursor-pointer rounded-full shadow-[0px_0px_0px_.29px_rgba(0,0,0,1)]"

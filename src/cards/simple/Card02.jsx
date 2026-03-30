@@ -7,7 +7,7 @@ function Card02() {
   const [active, setActive] = useState(false);
 
   return (
-    <div className="w-[280px] h-[395px] flex flex-col bg-[#FFFFFF] shadow-[0px_0px_14px_-2px_rgba(0,_0,_0,_0.1)] rounded-xl overflow-hidden relative">
+    <div className="w-[280px] h-[400px] flex flex-col bg-[#FFFFFF] shadow-[0px_0px_14px_-2px_rgba(0,_0,_0,_0.1)] rounded-xl overflow-hidden relative">
       <div className="w-full h-full">
         <img
           src={Image}
@@ -17,7 +17,7 @@ function Card02() {
       </div>
 
       {/* Enhanced glass/glossy effect */}
-      <div className="w-full h-fit flex flex-col px-[12px] pt-[8px] pb-6 absolute bottom-0 bg-gradient-to-b from-white/10 via-white/5 to-black/20 backdrop-blur-[12px] border-t border-white/30 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] before:absolute before:inset-0 before:bg-gradient-to-r before:from-white/20 before:to-transparent before:rounded-xl before:pointer-events-none">
+      <div className="w-full h-fit flex flex-col p-3 absolute bottom-0 bg-gradient-to-b from-white/10 via-white/5 to-black/20 backdrop-blur-[12px] border-t border-white/30 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] before:absolute before:inset-0 before:bg-gradient-to-r before:from-white/20 before:to-transparent before:pointer-events-none">
         {/* first heading */}
         <div className="flex justify-between items-center capitalize relative z-10">
           <h1 className="text-white text-xl font-medium drop-shadow-lg">
@@ -29,8 +29,8 @@ function Card02() {
         </div>
 
         {/* 2nd heading */}
-        <div className="mt-2 relative z-10">
-          <p className="text-white/80 text-sm drop-shadow-md">
+        <div className="mt-2">
+          <p className="text-[13.5px] font-normal leading-[1.3] text-white/60">
             Experience a cliffside loft with iconic white walls, blue domes and
             magical sunset views.
           </p>
@@ -56,7 +56,7 @@ function Card02() {
         </div>
 
         {/* footer */}
-        <div className="grid grid-cols-[.15fr_1fr] place-content-center mt-2 gap-2 relative z-10">
+        <div className="grid grid-cols-[.15fr_1fr] place-content-center mt-4 gap-2 relative z-10">
           <button
             onClick={() => setActive(!active)}
             className="w-8 h-8 flex items-center justify-center cursor-pointer rounded-full bg-white/10 backdrop-blur-[24px] shadow-[0px_0px_0px_.05px_rgba(255,_255,_255,_.55)] border border-white/20 hover:bg-white/20 transition-all duration-200 relative overflow-visible"
