@@ -1,12 +1,12 @@
 import Image from "/resort_image_guatemala.jpg";
-import { features } from ".";
+import { features } from "..";
 import { Heart } from "lucide-react";
 import { useState } from "react";
 
 export default function Card01() {
   const [active, setActive] = useState(false);
   return (
-    <div className="w-[300px] h-fit flex flex-col bg-[#FFFFFF] shadow-[0px_0px_14px_-1px_rgba(0,_0,_0,_0.15)] rounded-xl overflow-hidden">
+    <div className="w-[280px] h-fit flex flex-col bg-[#FFFFFF] shadow-[0px_0px_14px_-1px_rgba(0,_0,_0,_0.15)] rounded-xl overflow-hidden">
       <div className="w-full h-[150px]">
         <img src={Image} alt="" className="w-full h-full" />
       </div>
@@ -44,11 +44,10 @@ export default function Card01() {
           })}
         </div>
         {/* footer */}
-        <div className="grid grid-cols-[.15fr_1fr] place-content-center mt-2">
-
+        <div className="grid grid-cols-[.15fr_1fr] place-content-center mt-2 gap-2 relative z-10">
           <button
             onClick={() => setActive(!active)}
-            className="w-8 h-8 flex items-center justify-center cursor-pointer rounded-full shadow-[0px_0px_0px_.25px_rgba(0,_0,_0,_0.75)] relative overflow-visible"
+            className="w-8 h-8 flex items-center justify-center cursor-pointer rounded-full shadow-[0px_0px_0px_.29px_rgba(0,0,0,1)]"
           >
             {active ? (
               <Heart
@@ -58,11 +57,11 @@ export default function Card01() {
                 className="heart-active"
               />
             ) : (
-              <Heart size={14} className="heart-inactive" />
+              <Heart size={14} stroke="#000" className="heart-inactive" />
             )}
           </button>
 
-          <button className="w-auto py-2 text-sm rounded-full capitalize cursor-pointer shadow-[0px_0px_0px_.25px_rgba(0,_0,_0,_0.75)]">
+          <button className="w-auto py-2 text-sm text-[#000] rounded-full capitalize cursor-pointer shadow-[0px_0px_0px_.29px_rgba(0,0,0,_1)]">
             book now
           </button>
         </div>

@@ -1,5 +1,5 @@
 import Image from "/resort_image_guatemala.jpg";
-import { features } from ".";
+import { features } from "..";
 import { Heart } from "lucide-react";
 import { useState } from "react";
 
@@ -7,7 +7,7 @@ function Card02() {
   const [active, setActive] = useState(false);
 
   return (
-    <div className="w-[300px] h-[375px] flex flex-col bg-[#FFFFFF] shadow-[0px_0px_14px_-2px_rgba(0,_0,_0,_0.1)] rounded-xl overflow-hidden relative">
+    <div className="w-[280px] h-[395px] flex flex-col bg-[#FFFFFF] shadow-[0px_0px_14px_-2px_rgba(0,_0,_0,_0.1)] rounded-xl overflow-hidden relative">
       <div className="w-full h-full">
         <img
           src={Image}
@@ -23,7 +23,7 @@ function Card02() {
           <h1 className="text-white text-xl font-medium drop-shadow-lg">
             guatemala resort
           </h1>
-          <p className="text-white text-lg font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+          <p className="text-white text-lg drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
             $769
           </p>
         </div>
